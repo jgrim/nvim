@@ -21,6 +21,15 @@
 
 ### Python 2 & 3
 
+
+#### Mac
+```
+brew install python
+brew install python3
+pip2 install neovim --upgrade
+pip3 install neovim --upgrade
+```
+
 ### Ripgrep
 
 #### Mac
