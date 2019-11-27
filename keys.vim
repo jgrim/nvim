@@ -30,3 +30,6 @@ nmap <Leader>f :tag<space>
 
 "Spell checking
 map <Leader>ss :setlocal spell!<cr>
+
+"Exit terminal mode with esc
+tnoremap <Esc> <C-\><C-n>
