@@ -37,6 +37,7 @@ Plug 'ap/vim-css-color'
 
 " Autocomplete
 Plug 'ncm2/ncm2'
+Plug 'ncm2/ncm2-ultisnips'
 Plug 'roxma/nvim-yarp'
 Plug 'phpactor/phpactor',  {'for': 'php', 'do': 'composer install'}
 Plug 'phpactor/ncm2-phpactor'
