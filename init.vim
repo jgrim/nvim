@@ -2,9 +2,47 @@ if &compatible
     set nocompatible
 endif
 
-" Make these load from a system type config
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+" Declare the general config group for autocommand
+augroup vimrc
+  autocmd!
+augroup END
+
+"Detect OS
+if !exists('g:env')
+    if has('win64') || has('win32') || has('win16')
+        let g:env = 'WINDOWS'
+    else
+        let g:env = toupper(substitute(system('uname'), '\n', '', ''))
+    endif
+endif
+
+"OS specific logic examples
+" if g:env =~ 'DARWIN'
+"     " ... to do Mac OS X-specific stuff.
+" endif
+
+" if g:env =~ 'LINUX'
+"     " ... to do Linux-specific stuff.
+" endif
+
+" if g:env =~ 'WINDOWS'
+"     " ... to do Windows-specific stuff.
+" endif
+
+" if g:env =~ 'CYGWIN'
+"     " ... to do Cygwin-specific stuff.
+" endif
+
+" if g:env =~ 'MINGW'
+"     " ... to do MinGW-specific stuff (Git Bash, mainly).
+" endif
+
+"If mac set python paths
+if g:env =~ 'DARWIN'
+    " Make these load from a system type config
+    let g:python2_host_prog = '/usr/local/bin/python'
+    let g:python3_host_prog = '/usr/local/bin/python3'
+endif
 
 "Include settings and keys
 exe 'source '.stdpath('config').'/plugins.vim'
@@ -13,6 +51,11 @@ exe 'source '.stdpath('config').'/keys.vim'
 
 "Source every plugin configs
 for file in split(glob("plugins/*.vim"), '\n')
+    exe 'source' file
+endfor
+
+"Source custom local configurations
+for file in split(glob("local/*.vim"), '\n')
     exe 'source' file
 endfor
 
@@ -41,11 +84,3 @@ function! TermToggle(height)
     endif
 endfunction
 
-" Toggle terminal on/off (neovim)
-nnoremap <leader>t :call TermToggle(12)<CR>
-inoremap <leader>t <Esc>:call TermToggle(12)<CR>
-tnoremap <leader>t <C-\><C-n>:call TermToggle(12)<CR>
-
-" Terminal go back to normal mode
-tnoremap <Esc> <C-\><C-n>
-tnoremap :q! <C-\><C-n>:q!<CR>

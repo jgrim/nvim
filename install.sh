@@ -13,4 +13,11 @@ APT_GET=$(which apt-get)
 
 # Install neovim plugins
 
+# Install composer
+
+# Install PHP 7.3
+
+# Install PHP Codeing Standards Fixer
+composer global require friendsofphp/php-cs-fixer
+
 #+'PlugInstall --sync' +qa
