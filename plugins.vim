@@ -8,6 +8,15 @@ Plug 'skywind3000/gutentags_plus'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind']}
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+"Vinegar
+Plug 'tpope/vim-vinegar'
+
+"CtrlP
+Plug 'ctrlpvim/ctrlp.vim'
+
+"Vim-surround
+Plug 'tpope/vim-surround'
+
 " Vim registers
 Plug 'bfredl/nvim-miniyank'
 
@@ -66,6 +75,18 @@ Plug 'majutsushi/tagbar'
 
 " Debugging
 Plug 'joonty/vdebug'
+
+"Php
+Plug 'arnaud-lb/vim-php-namespace'
+
+"Auto pairs
+Plug 'jiangmiao/auto-pairs'
+
+"Auto close tags
+Plug 'alvan/vim-closetag'
+
+"Tabular
+Plug 'godlygeek/tabular'
 
 " PHPDoc
 Plug 'tobyS/vmustache' | Plug 'tobyS/pdv', {'for': 'php'}
