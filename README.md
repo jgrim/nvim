@@ -20,6 +20,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ## Programs to install
 
 ### Ctags
+brew install global
+
+sudo apt install global
 
 ### PHP Tools
 
