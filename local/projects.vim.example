@@ -1,0 +1,17 @@
+"Define bookmarks
+let g:startify_bookmarks = [
+            \{'1': '~/Projects/jgphoto/README.md'},
+            \]
+
+"Define project workspace
+call project#rc("~/Projects")
+
+"Address verify project
+Project 'AddressVerify'
+Callback 'AddressVerify',['Symfony', 'ProjectAddressVerify']
+function! ProjectAddressVerify(...)
+    let g:vdebug_options["path_maps"] = {
+                \ "/AddressVerify": "~/Projects/AddressVerify"
+                \}
+    PadawanStartServer
+endfunction
