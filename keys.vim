@@ -40,6 +40,9 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "Edit snippet file
 nmap <Leader>es :tabedit ~/.vim/snippets/
 
+"Edit projects file
+nmap <Leader>mp :tabedit ~/.config/nvim/local/projects.vim<cr>
+
 "Add simple highlight removal
 nmap <Leader><space> :nohlsearch<cr>
 
