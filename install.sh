@@ -3,21 +3,14 @@
 BREW=$(which brew)
 APT_GET=$(which apt-get)
 
-# Find neovim
+if [[ ! -z "$BREW" ]]; then
+    $BREW install neovim composer global python python3 php@7.3 ripgrep
+fi
 
-# Figure out if mac or linux from package managers found
-
-# install requirments for neovim if it's installed
-
-# install neovim if it's not installed
-
-# Install neovim plugins
-
-# Install composer
-
-# Install PHP 7.3
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install PHP Codeing Standards Fixer
 composer global require friendsofphp/php-cs-fixer
 
-#+'PlugInstall --sync' +qa
+nvim +'PlugInstall --sync' +qa
