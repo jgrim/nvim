@@ -50,12 +50,12 @@ exe 'source '.stdpath('config').'/general.vim'
 exe 'source '.stdpath('config').'/keys.vim'
 
 "Source every plugin configs
-for file in split(glob("plugins/*.vim"), '\n')
+for file in split(glob(stdpath('config')."/plugins/*.vim"), '\n')
     exe 'source' file
 endfor
 
 "Source custom local configurations
-for file in split(glob("local/*.vim"), '\n')
+for file in split(glob(stdpath('config')."/local/*.vim"), '\n')
     exe 'source' file
 endfor
 

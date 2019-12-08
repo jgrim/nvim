@@ -38,7 +38,7 @@ tnoremap :q! <C-\><C-n>:q!<CR>
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 
 "Edit snippet file
-nmap <Leader>es :tabedit ~/.vim/snippets/
+nmap <Leader>es :tabedit ~/.config/nvim/snippets/
 
 "Edit projects file
 nmap <Leader>mp :tabedit ~/.config/nvim/local/projects.vim<cr>

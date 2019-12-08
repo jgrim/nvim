@@ -2,6 +2,8 @@ augroup fzf
   autocmd!
 augroup END
 
+let g:vim_php_refactoring_make_setter_fluent = 2
+
 " Key mapping
 
 " History of file opened
