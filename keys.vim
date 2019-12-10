@@ -48,6 +48,7 @@ nmap <Leader><space> :nohlsearch<cr>
 
 "Make NERDTree easier to toggle
 nmap <Leader>w :NERDTreeToggle<cr>
+nmap <Leader>W :NERDTreeFind<cr>
 
 "Browse symbols
 nmap <Leader>r :CtrlPBufTag<cr>
