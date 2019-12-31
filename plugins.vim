@@ -25,6 +25,7 @@ Plug 'moll/vim-bbye'
 
 " Statusbar
 Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
 
 " Comment multiple lines
 Plug 'tpope/vim-commentary'
@@ -58,6 +59,7 @@ Plug 'wincent/ferret'
 
 " Code quality
 Plug 'neomake/neomake'
+Plug 'dense-analysis/ale'
 
 " Refactoring plugins
 Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
@@ -76,16 +78,16 @@ Plug 'majutsushi/tagbar'
 " Debugging
 Plug 'joonty/vdebug'
 
-"Php
+" Php
 Plug 'arnaud-lb/vim-php-namespace'
 
-"Auto pairs
+" Auto pairs
 Plug 'jiangmiao/auto-pairs'
 
-"Auto close tags
+" Auto close tags
 Plug 'alvan/vim-closetag'
 
-"Tabular
+" Tabular
 Plug 'godlygeek/tabular'
 
 " PHPDoc

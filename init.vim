@@ -48,6 +48,7 @@ endif
 exe 'source '.stdpath('config').'/plugins.vim'
 exe 'source '.stdpath('config').'/general.vim'
 exe 'source '.stdpath('config').'/keys.vim'
+exe 'source '.stdpath('config').'/filetypes.vim'
 
 "Source every plugin configs
 for file in split(glob(stdpath('config')."/plugins/*.vim"), '\n')

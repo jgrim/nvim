@@ -4,7 +4,8 @@
 BREW=$(which brew)
 APT_GET=$(which apt-get)
 if [[ ! -z "$BREW" ]]; then
-    $BREW install git nvm neovim ctags global composer python python3 php@7.3 ripgrep
+    $BREW cask install adoptopenjdk --no-quarantine
+    $BREW install git nvm neovim ctags global composer python python3 php@7.3 ripgrep languagetool
 fi
 if [[ ! -z "$APT_GET" ]]; then
     $APT_GET #@todo add package list 
