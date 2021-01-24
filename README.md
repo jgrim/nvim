@@ -1,4 +1,11 @@
 # Setup
-Checkout repo and run `install.sh`.
+Support for MacOS using Brew or Ubuntu with apt.
 
-Support for MacOS using Brew or Ubuntu with apt-get.
+## Install via script
+
+```sh
+curl -o- https://raw.githubusercontent.com/jgrim/nvim/master/install.sh  | bash
+```
+```sh
+wget -qO- https://raw.githubusercontent.com/jgrim/nvim/master/install.sh  | bash
+```
