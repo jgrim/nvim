@@ -16,7 +16,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     APT=$(which apt)
     if [[ ! -z "$APT" ]]; then
-        PHP_MODULES="php7.4 php7.4-cli php7.4-common php7.4-curl php7.4-curl php7.4-gd php7.4-intl php7.4-json php7.4-mbstring php7.4-opcache php7.4-readline php7.4-soap php7.4-xml"
+        PHP_MODULES="php7.4 php7.4-cli php7.4-zip php7.4-common php7.4-curl php7.4-curl php7.4-gd php7.4-intl php7.4-json php7.4-mbstring php7.4-opcache php7.4-readline php7.4-soap php7.4-xml"
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
         sudo $APT install git neovim ctags global python3 python3-pip $PHP_MODULES ripgrep 
 
