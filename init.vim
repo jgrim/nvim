@@ -38,11 +38,11 @@ endif
 " endif
 
 "If mac set python paths
-if g:env =~ 'DARWIN'
+"if g:env =~ 'DARWIN'
     " Make these load from a system type config
-    let g:python2_host_prog = '/usr/local/bin/python'
-    let g:python3_host_prog = '/usr/local/bin/python3'
-endif
+    "let g:python2_host_prog = '/usr/local/bin/python'
+    "let g:python3_host_prog = '/usr/local/bin/python3'
+"endif
 
 "Include settings and keys
 exe 'source '.stdpath('config').'/plugins.vim'
