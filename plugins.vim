@@ -1,8 +1,12 @@
 call plug#begin(stdpath('config') . '/plugged')
 
 " Ctags
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'skywind3000/gutentags_plus'
+Plug 'dhananjaylatkar/vim-gutentags'
+Plug 'dhananjaylatkar/cscope_maps.nvim' " cscope keymaps
+"Plug 'folke/which-key.nvim' " optional [for whichkey hints]
+"Plug 'nvim-telescope/telescope.nvim' " roptional [for picker='telescope']
+"Plug 'ibhagwan/fzf-lua' " optional [for picker='fzf-lua']
+"Plug 'nvim-tree/nvim-web-devicons' " optional [for devicons in telescope or fzf]
 
 " NerdTree
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind']}
