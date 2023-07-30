@@ -1,8 +1,8 @@
 call plug#begin(stdpath('config') . '/plugged')
 
-" CScope
+" Telescope
 Plug 'nvim-lua/plenary.nvim'
-Plug 'dhananjaylatkar/cscope_maps.nvim' " cscope keymaps
+Plug 'nvim-telescope/telescope.nvim' " cscope keymaps
 
 " NerdTree
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind']}
