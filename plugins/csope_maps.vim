@@ -1,3 +1,3 @@
 lua << EOF
-  require("cscope_maps").setup({})
+  require("telescope").setup({})
 EOF
