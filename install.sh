@@ -15,8 +15,8 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     APT=$(which apt)
     if [[ ! -z "$APT" ]]; then
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-        sudo $APT install git neovim ctags global python3 python3-pip ripgrep
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+        sudo $APT install git neovim universal-ctags global python3 python3-pip ripgrep
     fi
 else
     echo "Unsupported OS"

@@ -1,24 +1,20 @@
 call plug#begin(stdpath('config') . '/plugged')
 
-" Ctags
-Plug 'dhananjaylatkar/vim-gutentags'
+" CScope
+Plug 'nvim-lua/plenary.nvim'
 Plug 'dhananjaylatkar/cscope_maps.nvim' " cscope keymaps
-"Plug 'folke/which-key.nvim' " optional [for whichkey hints]
-"Plug 'nvim-telescope/telescope.nvim' " roptional [for picker='telescope']
-"Plug 'ibhagwan/fzf-lua' " optional [for picker='fzf-lua']
-"Plug 'nvim-tree/nvim-web-devicons' " optional [for devicons in telescope or fzf]
 
 " NerdTree
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind']}
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-"Vinegar
+" Vinegar
 Plug 'tpope/vim-vinegar'
 
-"CtrlP
+" CtrlP
 Plug 'ctrlpvim/ctrlp.vim'
 
-"Vim-surround
+" Vim-surround
 Plug 'tpope/vim-surround'
 
 " Vim registers
