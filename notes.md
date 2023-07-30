@@ -24,11 +24,6 @@ This uses abolish.vim
 `cr<space>` space case
 `crt` to Title Case
 
-## Vim PHP CS Fixer
-
-`<leader>pcd` fix directory
-`<leader>pcf` fix file
-
 ## Vinegar
 `-` to show project drawer
 `I` to show help while showing vinegar
@@ -37,10 +32,6 @@ This uses abolish.vim
 `y.` to yank the absolute path of the file
 `~` to go to home directory
 
-## Vim PHP Namespace
-`\u` in normal or insert mode will import the class or function under the cursor
-`\e` in normal or insert mode will expand the name to a fully qualified name
-
 ## Surround.vim
 `cs"'` replace " with '
 `cs'<q>` replace ' with <q>
@@ -48,4 +39,3 @@ This uses abolish.vim
 `ysiw]` to wrap word with ]
 `ysiw{` to wrap word with { and make it have spaces
 `yssb` wrap entire line with parentheses
-
