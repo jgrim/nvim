@@ -41,10 +41,6 @@ Plug 'tpope/vim-abolish'
 Plug 'amiorin/vim-project'
 Plug 'mhinz/vim-startify'
 
-" Syntax plugins
-Plug 'StanAngeloff/php.vim'
-Plug 'stephpy/vim-php-cs-fixer'
-
 " Html
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
@@ -53,8 +49,6 @@ Plug 'ap/vim-css-color'
 Plug 'ncm2/ncm2'
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'roxma/nvim-yarp'
-Plug 'phpactor/phpactor',  {'for': 'php', 'do': 'composer install'}
-Plug 'phpactor/ncm2-phpactor'
 
 " Searching / replace
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -64,10 +58,6 @@ Plug 'wincent/ferret'
 " Code quality
 Plug 'neomake/neomake'
 Plug 'dense-analysis/ale'
-
-" Refactoring plugins
-Plug 'adoy/vim-php-refactoring-toolbox', {'for': 'php'}
-Plug '2072/php-indenting-for-vim', {'for': 'php'}
 
 " Git plugin
 Plug 'tpope/vim-fugitive'
@@ -79,12 +69,6 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " Outline plugin
 Plug 'majutsushi/tagbar'
 
-" Debugging
-Plug 'joonty/vdebug'
-
-" Php
-Plug 'arnaud-lb/vim-php-namespace'
-
 " Auto pairs
 Plug 'jiangmiao/auto-pairs'
 
@@ -94,13 +78,9 @@ Plug 'alvan/vim-closetag'
 " Tabular
 Plug 'godlygeek/tabular'
 
-" PHPDoc
-Plug 'tobyS/vmustache' | Plug 'tobyS/pdv', {'for': 'php'}
-
 " Markdown
 Plug 'tpope/vim-markdown', {'for': 'markdown'}
 "Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
 
 call plug#end()
